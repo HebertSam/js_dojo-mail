@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: string = 'Dojo Mail';
+  header: Array<string> = ["Email", "Importance", "Subject", "Content"];
+  emails = [{
+    email: "bill@gates.com",
+    importance: true,
+    subject: "New Windows",
+    content: "Windows XI will launch in year 2100"
+  },
+  {
+    email: "bill@gates.com",
+    importance: false,
+    subject: "New Windows",
+    content: "Windows XI will launch in year 2100"
+  },
+  {
+    email: "bill@gates.com",
+    importance: true,
+    subject: "New Windows",
+    content: "Windows XI will launch in year 2100"
+  }]
 }
